@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cofee Order"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="JenisKopi"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/kopiGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rbRobusta">
+
+        <RadioButton
+
+            android:id="@+id/rbRobusta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kopi Robusta" />
+
+        <RadioButton
+            android:id="@+id/rbExpresso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expresso" />
+
+        <RadioButton
+            android:id="@+id/rbLuwak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kopi Luwak" />
+
+    </RadioGroup>
+<!--    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abort"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/cbCream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cream" />
+
+
+    <CheckBox
+        android:id="@+id/cbSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sugar" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="Menu Tambahan"
+        />
+
+    <RadioGroup
+        android:id="@+id/menuGrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rbNasgor">
+
+        <RadioButton
+            android:id="@+id/rbNasgor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng" />
+
+        <RadioButton
+            android:id="@+id/rbMigor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mie Goreng" />
+
+        <RadioButton
+            android:id="@+id/rbMibus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mie Rebus" />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bayar"
+        android:onClick="btnBayar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Yang dibayar"/>
+    <TextView
+        android:id="@+id/pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="0"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        />
+</LinearLayout>
